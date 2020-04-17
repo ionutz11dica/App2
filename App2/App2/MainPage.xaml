@@ -6,11 +6,64 @@
              mc:Ignorable="d"
              x:Class="App2.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome, Ionut! Sanatate - sa traiti" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <ScrollView>
+        <StackLayout Spacing="20"
+              >
+            <!-- Place new controls here -->
+            <RelativeLayout  HeightRequest="120" HorizontalOptions="Center"
+              >
+
+                <Image Source="Classic.jpeg" Aspect="AspectFit"/>
+                <StackLayout BackgroundColor="#E2E2E2"  Opacity=".5"  HorizontalOptions="Center" VerticalOptions="Center" >
+                    <Label XAlign="Center" TextColor="Black" 
+                       VerticalTextAlignment="Center" 
+                       HorizontalOptions="CenterAndExpand"
+                      FontSize="20"
+                            WidthRequest="200"
+                       Text="Classic"/>
+                </StackLayout>
+            </RelativeLayout>
+            <RelativeLayout  HeightRequest="120" HorizontalOptions="Center"
+              >
+
+                <Image Source="Romance.jpeg" Aspect="AspectFit"/>
+                <StackLayout BackgroundColor="#E2E2E2"  Opacity=".5"  HorizontalOptions="Center" VerticalOptions="Center" >
+                    <Label XAlign="Center" TextColor="Black" 
+                       VerticalTextAlignment="Center" 
+                       HorizontalOptions="CenterAndExpand"
+                      FontSize="20"
+                            WidthRequest="200"
+                       Text="Romance"/>
+                </StackLayout>
+            </RelativeLayout>
+            <RelativeLayout  HeightRequest="120" HorizontalOptions="Center"
+              >
+
+                <Image Source="Inspo.jpeg" Aspect="AspectFit"/>
+                <StackLayout BackgroundColor="#E2E2E2"  Opacity=".5"  HorizontalOptions="Center" VerticalOptions="Center" >
+                    <Label XAlign="Center" TextColor="Black" 
+                       VerticalTextAlignment="Center" 
+                       HorizontalOptions="CenterAndExpand"
+                      FontSize="20"
+                            WidthRequest="200"
+                       Text="Inspirational"/>
+                </StackLayout>
+            </RelativeLayout>
+            <RelativeLayout  HeightRequest="120" HorizontalOptions="Center"
+              >
+
+                <Image Source="Fiction.jpeg" Aspect="AspectFit"/>
+                <StackLayout BackgroundColor="#E2E2E2"  Opacity=".5"  HorizontalOptions="Center" VerticalOptions="Center" >
+                    <Label XAlign="Center" TextColor="Black" 
+                       VerticalTextAlignment="Center" 
+                       HorizontalOptions="CenterAndExpand"
+                      FontSize="20"
+                            WidthRequest="200"
+                       Text="Fiction"/>
+                </StackLayout>
+            </RelativeLayout>
+
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>

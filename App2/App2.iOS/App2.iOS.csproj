@@ -132,4 +132,25 @@
       <Name>App2</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NonFiction.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Romance.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Science.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Classic.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Fiction.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Inspirational.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Inspo.jpeg" />
+  </ItemGroup>
 </Project>
