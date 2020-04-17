@@ -17,5 +17,12 @@ namespace App2
         {
             InitializeComponent();
         }
+
+        public void BookList_Clicked(object sender, EventArgs e)
+        {
+
+            Navigation.PushAsync(new BookList());
+        }
     }
+
 }

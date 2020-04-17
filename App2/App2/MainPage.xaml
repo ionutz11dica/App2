@@ -6,13 +6,18 @@
              mc:Ignorable="d"
              x:Class="App2.MainPage">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Book List" Order="Secondary" Clicked="BookList_Clicked"></ToolbarItem>
+        <ToolbarItem Text="Wish List" Order="Secondary" Clicked="BookList_Clicked"/>
+
+    </ContentPage.ToolbarItems>
+   
     <ScrollView>
         <StackLayout Spacing="20"
               >
             <!-- Place new controls here -->
             <RelativeLayout  HeightRequest="120" HorizontalOptions="Center"
               >
-
                 <Image Source="Classic.jpeg" Aspect="AspectFit"/>
                 <StackLayout BackgroundColor="#E2E2E2"  Opacity=".5"  HorizontalOptions="Center" VerticalOptions="Center" >
                     <Label XAlign="Center" TextColor="Black" 
