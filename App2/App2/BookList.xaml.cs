@@ -43,5 +43,17 @@ namespace App2
                 Navigation.PushAsync(new BookDetails(book.BookId));
             }
         }
+        public void btnShowDetails(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            string selectedItem = button.AutomationId.ToString();
+            Navigation.PushAsync(new BookDetails(selectedItem));
+        }
+        public void btnAddToWishList(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            string selectedItem = button.AutomationId.ToString();
+            DisplayAlert("Wishlist", "The book was added on your wishlist!"+selectedItem, "OK");
+        }
     }
 }

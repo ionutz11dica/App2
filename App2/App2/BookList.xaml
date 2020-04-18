@@ -17,16 +17,31 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal">
-                            <Image Source="{Binding ImageUrl}"/>
-                            <StackLayout Orientation="Vertical">
-                                <Label Text="{Binding Title}"></Label>
-                                <Label Text="{Binding Authors}"></Label>
-                            </StackLayout>
-                        </StackLayout>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100"/>
+                                <RowDefinition Height="100"/>
+                                <RowDefinition Height="100"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image x:Name="imgBook" Source="{Binding ImageUrl}"  Grid.RowSpan="2" Grid.Column="0"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Title}"/>
+                            <Label Grid.Row="0" Grid.Column="2" Text="{Binding Authors}"/>
+
+                            <Button Text="Details" Grid.Row="3" Grid.Column="0" Clicked="btnShowDetails"/>
+                            <Button AutomationId="{Binding BookId}" Text="Add to Wishlist" Grid.Row="3" Grid.Column="1" Clicked="btnAddToWishList"/>
+                        </Grid>
+                       
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
 </ContentPage>
+
+    
